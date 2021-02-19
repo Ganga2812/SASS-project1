@@ -2,6 +2,15 @@
 	text-align: center;
 }
 
+body{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color: rgb(185, 228, 192);
+}
+
+.cover_img{
+	margin-top:65px;
+	height:100px;
+}
 .main_container{
 	display: grid;
 	grid-template-columns: repeat(4,auto);
@@ -14,6 +23,7 @@
 	position: relative;
 	width: 188px;
 	height: 263px;
+	transition: all 0.5s ease;
 }
 
 .card{
@@ -22,30 +32,104 @@
 	height: 100%;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
-	
 }
 
-.card:active {
+.card:active{
 	transform: rotateY(180deg);
 }
 
 .front{
+	color:white;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-	background: blue;
+	background: rgb(144, 144, 241);
 	text-align: center;
 	border-radius: 20px;
 }
 
 .back{
+	color:white;
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
 	transform: rotateY(180deg);
-	background: red;
+	background: rgb(255, 110, 110);
 	text-align: center;
 	border-radius: 20px;
+}
+
+.shuffle_button{
+	position: relative;
+	grid-column-end:span 4;
+	left:-300px;
+	background-color: rgb(246, 233, 113);
+	width: 150px;
+	height: 50px;
+	font-size: 40px;
+	padding: 10px;
+	border-radius: 20px;
+	margin-left: 10px;
+}
+
+.shuffle_button:hover ~ .one-two{
+	transform: translateX(-198px);
+}
+
+.shuffle_button:hover ~ .one-three{
+	transform: translateX(-396px);
+}
+
+.shuffle_button:hover ~ .one-four{
+	transform: translateX(-594px);
+}
+
+.shuffle_button:hover ~ .two-one{
+	transform: translateY(-273px);
+}
+
+.shuffle_button:hover ~ .two-two{
+	transform: translateX(-198px) translateY(-273px);
+}
+
+.shuffle_button:hover ~ .two-three{
+	transform: translateX(-396px) translateY(-273px);;
+}
+
+.shuffle_button:hover ~ .two-four{
+	transform: translateX(-594px) translateY(-273px)
+}
+
+.shuffle_button:hover ~ .three-one{
+	transform: translateY(-546px);
+}
+
+.shuffle_button:hover ~ .three-two{
+	transform: translateX(-198px) translateY(-546px);
+}
+
+.shuffle_button:hover ~ .three-three{
+	transform: translateX(-396px) translateY(-546px);
+}
+
+.shuffle_button:hover ~ .three-four{
+	transform: translateX(-594px) translateY(-546px);
+}
+
+.shuffle_button:hover ~ .four-one{
+	transform: translateY(-819px);
+}
+
+.shuffle_button:hover ~ .four-two{
+	transform: translateX(-198px) translateY(-819px);
+}
+
+.shuffle_button:hover ~ .four-three{
+	transform: translateX(-396px) translateY(-819px);
+}
+
+.shuffle_button:hover ~ .four-four{
+	transform: translateX(-594px) translateY(-819px);
 }
