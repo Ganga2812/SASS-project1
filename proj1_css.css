@@ -126,6 +126,33 @@ body{
 	justify-content: center;
 }
 
+.summary{
+	color: white;
+	width: 30%;
+	height: 70%;
+	background: rgb(255, 110, 110);
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.summaryh1{
+	text-align: center;
+}
+
+.summaryh2{
+	text-align: center;
+}
+
+.summaryp{
+	text-align: center;
+}
+
+.summaryul{
+	margin-left: 25%;
+	
+}
+
 .shuffle_button{
 	position: relative;
 	grid-column-end:span 4;
