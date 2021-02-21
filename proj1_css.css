@@ -43,8 +43,6 @@ body{
 
 }
 
-
-
 @keyframes spin{
 	50%{
 		transform: rotateY(180deg) scale(2.0);
@@ -88,7 +86,7 @@ body{
 
 .rulesCard{
 	width: 25%;
-	height: 80%;
+	height: 100%;
 	transform-style: preserve-3d;
 	transition: all 0.5s ease;
 }
